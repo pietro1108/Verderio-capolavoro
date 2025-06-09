@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="eventi">
+  <meta name="keywords" content="eventi">
+  <meta name="author" content="Verderio Pietro">
+  <meta name="data di creazione" content="03/06/25">
+  <meta name="data di ultima revisione" content="03/06/25">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAFFE DEGLI ARTISTI</title>
+  <link rel="stylesheet" type="text/css" href="stile.css">
+</head>
+<body>
+
+  <header>
+    <h1>CAFFE' DEGLI ARTISTI</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="homepag.html">Home Page</a></li>
+      <li><a href="dovesiamo.html">Dove Siamo</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="eventispeciali.html">Eventi Speciali</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <article>
+        <h2>Eventi</h2>
+
+        <div class="evento">
+          <h3>Mercoledì – Serata Karaoke</h3>
+          <p>Dalle 21:00 in poi
+             Una serata divertente per cantare con gli amici!
+             Promo cocktail: 2x1 su tutti i drink dalle 21:00 alle 23:00</p>
+        </div>
+
+        <div class="evento">
+          <h3>Giovedì – Pizza No Stop</h3>
+          <p>Dalle 20:00 alle 22:30
+             Pizza a volontà con gusti a rotazione (anche vegetariani e senza lattosio)
+             Prezzo fisso: €18 a persona – incluso bibita o birra</p>
+        </div>
+
+        <div class="evento">
+          <h3> Venerdì – Live Music Night</h3>
+          <p>Dalle 21:00
+             Band locali, cover acustiche e dj set in terrazza
+             Ingresso libero – possibilità di prenotare tavolo con drink incluso</p>
+        </div>
+
+        <div class="evento">
+          <h3> Domenica – Brunch della Famiglia</h3>
+          <p>Dalle 11:00 alle 15:00
+             Buffet dolce e salato, succhi, caffè e piatti caldi serviti al tavolo.
+             Prezzo: €22 adulti | €12 bambini (fino a 10 anni)
+             Area bimbi con animazione gratuita</p>
+        </div>
+      </article>
+    </section>
+
+    <aside id="form-eventi">
+      <h2>iscrizione</h2>
+      <form action="mailto:caffedegliartistieventi@gmail.com" method="post" enctype="text/plain">
+        <label for="nome">Nome e Cognome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="evento">Evento a cui vuoi partecipare:</label><br>
+        <select id="evento" name="evento" required>
+          <option value=""> Seleziona un evento </option>
+          <option value="karaoke"> mercoledi-karaoke</option>
+          <option value="pizza_no_stop"> giovedi-pizza no stop</option>
+          <option value="live-music"> venerdi-livemusic-night</option>
+          <option value="brunch">domenica-brunch-con-famiglia</option>
+        </select><br><br>
+
+        <label for="note">partecipanti:</label><br>
+        <textarea id="note" name="note" rows="4" cols="30" placeholder=" numero partecipanti..."></textarea><br><br>
+
+        <input type="submit" value="Invia Iscrizione">
+        <input type="reset" value="Cancella">
+      </form>
+    </aside>
+  </main>
+
+  <footer>
+    <p>NON PERDERTI GLI EVENTI O TE NE PENTIRAI!</p>
+  </footer>
+
+</body>
+</html>
